@@ -1,4 +1,3 @@
-
 /*
  * ER/Studio Data Architect 9.5 SQL Code Generation
  * Project :      LANDING VTEMP.dm1
@@ -26,7 +25,7 @@ BEGIN
     PRINT '<<< DROPPED TABLE [airsol].[LAND_DIIO_SCHEDULE] >>>'
 END
 go
-IF OBJECT_ID('[airsol].[LAND_TBLAIRPORTS]') IS NOT NULL
+IF OBJECT_ID('[airsol].[LAND_TBLAIRPORTS]') IS NOT NULL 
 BEGIN
     DROP TABLE [airsol].[LAND_TBLAIRPORTS]
     PRINT '<<< DROPPED TABLE [airsol].[LAND_TBLAIRPORTS] >>>'

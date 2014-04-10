@@ -5,6 +5,7 @@
  *
  * Date Created : Thursday, May 16, 2013 10:46:36
  * Target DBMS : Microsoft SQL Server 2012
+ * Testing Git Hub
  */
 
 IF OBJECT_ID('[aaa].[LAND_USAGE_RECORD]') IS NOT NULL

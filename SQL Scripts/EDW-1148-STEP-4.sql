@@ -1,0 +1,147 @@
+USE [ODS_LANDING]
+GO
+
+/****** Object:  Table [sn].[LAND_PROBLEM]    Script Date: 4/9/2014 7:37:40 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+PRINT 'Creating table LAND_PROBLEM. Started at: ' + CONVERT(VARCHAR(20), GETUTCDATE(), 120)
+GO
+
+IF EXISTS(SELECT 1 FROM sys.objects where name = 'LAND_PROBLEM') DROP TABLE [sn].[LAND_PROBLEM]
+
+CREATE TABLE [sn].[LAND_PROBLEM](
+	[KNOWN_ERROR] [varchar](50) NULL,
+	[PROBLEM_STATE] [varchar](50) NULL,
+	[RELATED_INCIDENTS] [int] NULL,
+	[CHANGE_REQUEST] [varchar](32) NULL,
+	[SYS_ID] [varchar](32) NULL,
+	[AIRCRAFT_TYPE] [varchar](40) NULL,
+	[AIRLINE] [varchar](40) NULL,
+	[ROOT_CAUSE_ASSET_DEVICE] [varchar](40) NULL,
+	[CAUSED_BY_CHANGE] [varchar](32) NULL,
+	[COMPLEXITY] [varchar](40) NULL,
+	[COST_TO_RESOLVE] [varchar](15) NULL,
+	[DATE_OF_FLIGHT] [datetime] NULL,
+	[FLIGHT_NUMBER] [varchar](40) NULL,
+	[FOLLOW_UP_DATE] [datetime] NULL,
+	[KNOWN_ERROR_DATE] [datetime] NULL,
+	[MAJOR_PROBLEM] [varchar](5) NULL,
+	[MAJOR_PROBLEM_PROTOCOL] [varchar](40) NULL,
+	[MAJOR_PROBLEM_TIME] [datetime] NULL,
+	[NOSE_NUMBER] [varchar](40) NULL,
+	[PRIORITY_COUNT] [int] NULL,
+	[PROBLEM_REQUESTOR] [varchar](32) NULL,
+	[PAIN_VALUE_ANALYSIS] [int] NULL,
+	[RESOLUTION_CODE] [varchar](40) NULL,
+	[ROOT_CAUSE] [varchar](4000) NULL,
+	[ROOT_CAUSE_CODE] [varchar](40) NULL,
+	[SEAT_NUMBER] [varchar](40) NULL,
+	[SOURCE] [varchar](40) NULL,
+	[TAIL_NUMBER] [varchar](40) NULL,
+	[TYPE_LEVEL_1] [varchar](40) NULL,
+	[TYPE_LEVEL_2] [varchar](40) NULL,
+	[TYPE_LEVEL_3] [varchar](40) NULL,
+	[WORK_AROUND_DEPLOYED] [datetime] NULL,
+	[WORKAROUND] [varchar](4000) NULL,
+	[ACTIVE] [varchar](5) NULL,
+	[ACTIVITY_DUE] [datetime] NULL,
+	[APPROVAL_STATE] [varchar](40) NULL,
+	[APPROVAL_HISTORY] [varchar](4000) NULL,
+	[APPROVAL_SET] [datetime] NULL,
+	[ASSIGNED_TO] [varchar](32) NULL,
+	[ASSIGNMENT_GROUP] [varchar](32) NULL,
+	[BUSINESS_DURATION] [varchar](40) NULL,
+	[DURATION] [varchar](40) NULL,
+	[CLOSED] [datetime] NULL,
+	[CLOSED_BY] [varchar](32) NULL,
+	[RESOLVE_NOTES] [varchar](4000) NULL,
+	[CONFIGURATION_ITEM] [varchar](32) NULL,
+	[ADDITIONAL_COMMENTS] [varchar](4000) NULL,
+	[COMMENTS_AND_WORK_NOTES] [varchar](4000) NULL,
+	[COMPANY] [varchar](32) NULL,
+	[CONTACT_TYPE] [varchar](40) NULL,
+	[CORRELATION_DISPLAY] [varchar](100) NULL,
+	[CORRELATION_ID] [varchar](100) NULL,
+	[DELIVERY_PLAN] [varchar](32) NULL,
+	[DELIVERY_TASK] [varchar](32) NULL,
+	[DETAILED_DESCRIPTION] [varchar](4000) NULL,
+	[DUE_DATE] [datetime] NULL,
+	[ESCALATION] [varchar](50) NULL,
+	[EXPECTED_START] [datetime] NULL,
+	[FOLLOW_UP] [datetime] NULL,
+	[GROUP_LIST] [varchar](4000) NULL,
+	[IMPACT] [varchar](50) NULL,
+	[KNOWLEDGE] [varchar](5) NULL,
+	[LOCATION] [varchar](32) NULL,
+	[MADE_SLA] [varchar](5) NULL,
+	[NUMBER] [varchar](40) NOT NULL,
+	[OPENED] [datetime] NULL,
+	[OPENED_BY] [varchar](32) NULL,
+	[ORDER] [int] NULL,
+	[PARENT] [varchar](32) NULL,
+	[PRIORITY] [varchar](50) NULL,
+	[REASSIGNMENT_COUNT] [int] NULL,
+	[REJECTION_GOTO] [varchar](32) NULL,
+	[SERVICE_OFFERING] [varchar](32) NULL,
+	[SHORT_DESCRIPTION] [varchar](80) NULL,
+	[SKILLS] [varchar](4000) NULL,
+	[SLA_DUE] [datetime] NULL,
+	[STATE] [varchar](50) NULL,
+	[TASK_TYPE] [varchar](80) NULL,
+	[CREATED_BY] [varchar](40) NULL,
+	[CREATED] [datetime] NULL,
+	[DOMAIN] [varchar](32) NULL,
+	[UPDATES] [int] NULL,
+	[UPDATED_BY] [varchar](40) NULL,
+	[UPDATED] [datetime] NULL,
+	[TIME_WORKED] [int] NULL,
+	[UPON_APPROVAL] [varchar](40) NULL,
+	[UPON_REJECT] [varchar](40) NULL,
+	[URGENCY] [varchar](50) NULL,
+	[USER_INPUT] [varchar](4000) NULL,
+	[BUSINESS_SERVICE] [varchar](32) NULL,
+	[PROVIDER_SERVICE] [varchar](32) NULL,
+	[KB_ARTICLE] [varchar](32) NULL,
+	[COMPONENT_CATEGORY_L1] [varchar](40) NULL,
+	[COMPONENT_CATEGORY_L2] [varchar](40) NULL,
+	[COMPONENT_CATEGORY_L3] [varchar](40) NULL,
+	[VARIABLES] [varchar](40) NULL,
+	[WATCH_LIST] [varchar](4000) NULL,
+	[WORKFLOW_ACTIVITY] [varchar](32) NULL,
+	[ACTUAL_WORK_END] [datetime] NULL,
+	[WORK_NOTES] [varchar](4000) NULL,
+	[WORK_NOTES_LIST] [varchar](4000) NULL,
+	[ACTUAL_WORK_START] [datetime] NULL,
+	[ODS_CREATE_DATE] [datetime] NULL,
+	[ODS_CREATED_BY] [varchar](50) NULL,
+	[ODS_UPDATE_DATE] [datetime] NULL,
+	[ODS_UPDATED_BY] [varchar](50) NULL,
+ CONSTRAINT [PK_LAND_PROBLEM] PRIMARY KEY CLUSTERED 
+(
+	[NUMBER] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+ALTER TABLE [sn].[LAND_PROBLEM] ADD  DEFAULT (getutcdate()) FOR [ODS_CREATE_DATE]
+GO
+
+ALTER TABLE [sn].[LAND_PROBLEM] ADD  DEFAULT (getutcdate()) FOR [ODS_UPDATE_DATE]
+GO
+
+CREATE INDEX idx01_LAND_PROBLEM ON sn.LAND_PROBLEM(ODS_UPDATE_DATE)
+GO
+
+PRINT 'Creating table LAND_PROBLEM. Finished at: ' + CONVERT(VARCHAR(20), GETUTCDATE(), 120)
+GO

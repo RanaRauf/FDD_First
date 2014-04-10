@@ -1,0 +1,195 @@
+USE [ODS_LANDING]
+GO
+
+/****** Object:  Table [sn].[LAND_INCIDENT]    Script Date: 4/9/2014 7:36:46 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+PRINT 'Creating table LAND_INCIDENT. Started at: ' + CONVERT(VARCHAR(20), GETUTCDATE(), 120)
+GO
+
+IF EXISTS(SELECT 1 FROM sys.objects where name = 'LAND_INCIDENT') DROP TABLE [sn].[LAND_INCIDENT]
+
+CREATE TABLE [sn].[LAND_INCIDENT](
+	[BUSINESS_RESOLVE_TIME] [int] NULL,
+	[RESOLVE_TIME] [int] NULL,
+	[CUSTOMER] [varchar](32) NULL,
+	[CATEGORY] [varchar](40) NOT NULL,
+	[CAUSED_BY_CHANGE] [varchar](32) NULL,
+	[CHILD_INCIDENTS] [int] NULL,
+	[RESOLVE_CODE] [varchar](40) NULL,
+	[INCIDENT_STATE] [varchar](50) NULL,
+	[NOTIFY_MODE] [varchar](40) NULL,
+	[PARENT_INCIDENT] [varchar](32) NULL,
+	[PROBLEM] [varchar](32) NULL,
+	[REOPEN_COUNT] [varchar](32) NULL,
+	[RESULTING_CHANGE_REQUEST] [varchar](32) NULL,
+	[SEVERITY] [varchar](50) NULL,
+	[SUBCATEGORY] [varchar](40) NULL,
+	[SYS_ID] [varchar](32) NULL,
+	[AACU_RELEASE_OR_PART_NUMBER] [varchar](40) NULL,
+	[ACPU_RELEASE_OR_PART_NUMBER] [varchar](40) NULL,
+	[AIRCRAFT_RELEASE] [varchar](40) NULL,
+	[AIRCRAFT_TYPE] [varchar](40) NULL,
+	[AIRLINE] [varchar](40) NULL,
+	[ARE_LRUS_PINTABLE] [varchar](5) NULL,
+	[LOG_PAGE] [varchar](40) NULL,
+	[ASSIGNED] [datetime] NULL,
+	[BATCH_VERSION_OF_USB] [varchar](40) NULL,
+	[REPORTED_BY_USER] [varchar](32) NULL,
+	[CREATED_BY_TIER_1] [varchar](5) NULL,
+	[CUSTOMER_IMPACTING] [varchar](5) NULL,
+	[CUSTOMER_RESPONSE_TIME] [int] NULL,
+	[DATE_OF_FLIGHT] [datetime] NULL,
+	[DUPLICATE_INCIDENT] [varchar](32) NULL,
+	[FLIGHT_ARRIVAL_TIME] [datetime] NULL,
+	[FLIGHT_DEPARTURE_TIME] [datetime] NULL,
+	[FLIGHT_NUMBER] [varchar](40) NULL,
+	[FIRST_LINE] [varchar](5) NULL,
+	[HARDWARE_SWAP_DATE] [datetime] NULL,
+	[INCIDENT_ASSIGNED_DATE] [datetime] NULL,
+	[INCIDENT_CLOSED_DATE] [datetime] NULL,
+	[INCIDENT_DATE] [datetime] NULL,
+	[INCIDENT_IN_PROGRESS_DATE] [datetime] NULL,
+	[INCIDENT_LAST_ASSIGNED_DATE] [datetime] NULL,
+	[INCIDENT_LAST_IN_PROGRESS_DATE] [datetime] NULL,
+	[INCIDENT_STATE_COUNT] [int] NULL,
+	[INCIDENT_TYPE] [varchar](40) NULL,
+	[IN_PROGRESS] [datetime] NULL,
+	[IS_ATG_LINK_UP] [varchar](5) NULL,
+	[IS_CLD_INSTALLED] [varchar](5) NULL,
+	[IS_PROB_LIMT_SPECIFIC_ACPU_REL] [varchar](5) NULL,
+	[IS_PROB_SEEN_SPECIFIC_AIRLINE] [varchar](5) NULL,
+	[IS_PROB_SEEN_ALL_AIRLINE] [varchar](5) NULL,
+	[IS_TM_LINK_PINGABLE] [varchar](5) NULL,
+	[IS_TM_LINK_UP] [varchar](5) NULL,
+	[LAST_USER_CONNECTED_DATE] [datetime] NULL,
+	[LATERAL_ASSIGNMENT] [varchar](5) NULL,
+	[MAJOR_INCIDENT] [varchar](5) NULL,
+	[TS1_MAJOR_OUTAGE] [varchar](5) NULL,
+	[NOSE_NUMBER] [varchar](40) NULL,
+	[NOTIFY] [varchar](40) NULL,
+	[NOT_TIER_1] [varchar](5) NULL,
+	[FCR] [varchar](5) NULL,
+	[ON_HOLD_NOTES] [varchar](1000) NULL,
+	[ON_HOLD_REASON] [varchar](40) NULL,
+	[ORIGINAL_ASSIGNMENT_GROUP] [varchar](32) NULL,
+	[PAC_RELEASE_OR_PART_NUMBER] [varchar](40) NULL,
+	[PRIORITY_COUNT] [int] NULL,
+	[REFERRAL_COUNT] [int] NULL,
+	[REOPENED] [varchar](5) NULL,
+	[REPORTED_BY] [varchar](40) NULL,
+	[RESOLVED] [datetime] NULL,
+	[RESOLVED_BY] [varchar](32) NULL,
+	[SEAT_NUMBER] [varchar](40) NULL,
+	[SET_TO_P1] [datetime] NULL,
+	[TAIL_NUMBER] [varchar](40) NULL,
+	[TD] [varchar](40) NULL,
+	[VENDOR] [varchar](40) NULL,
+	[VENDOR_TICKET_NUMBER] [varchar](40) NULL,
+	[VIDEO_TAIL] [varchar](5) NULL,
+	[HARDWARE_SWAPPED_WHEN] [varchar](5) NULL,
+	[WHAT_LRU_AFFECTED] [varchar](40) NULL,
+	[WHAT_SOFTW_BUNDLE_INSTALLED] [varchar](100) NULL,
+	[ACTIVE] [varchar](5) NULL,
+	[ACTIVITY_DUE] [datetime] NULL,
+	[APPROVAL_STATE] [varchar](40) NULL,
+	[APPROVAL_HISTORY] [varchar](4000) NULL,
+	[APPROVAL_SET] [datetime] NULL,
+	[ASSIGNED_TO] [varchar](32) NULL,
+	[ASSIGNMENT_GROUP] [varchar](32) NULL,
+	[BUSINESS_DURATION] [int] NULL,
+	[DURATION] [int] NULL,
+	[CLOSED] [datetime] NULL,
+	[CLOSED_BY] [varchar](32) NULL,
+	[RESOLVE_NOTES] [varchar](4000) NULL,
+	[CONFIGURATION_ITEM] [varchar](32) NULL,
+	[ADDITIONAL_COMMENTS] [varchar](4000) NULL,
+	[COMMENTS_AND_WORK_NOTES] [varchar](4000) NULL,
+	[COMPANY] [varchar](32) NULL,
+	[CONTACT_TYPE] [varchar](40) NULL,
+	[CORRELATION_DISPLAY] [varchar](100) NULL,
+	[CORRELATION_ID] [varchar](100) NULL,
+	[DELIVERY_PLAN] [varchar](32) NULL,
+	[DELIVERY_TASK] [varchar](32) NULL,
+	[DETAILED_DESCRIPTION] [varchar](4000) NULL,
+	[DUE_DATE] [datetime] NULL,
+	[ESCALATION] [varchar](50) NULL,
+	[EXPECTED_START] [datetime] NULL,
+	[FOLLOW_UP] [datetime] NULL,
+	[GROUP_LIST] [varchar](4000) NULL,
+	[IMPACT] [varchar](50) NULL,
+	[KNOWLEDGE] [varchar](5) NULL,
+	[LOCATION] [varchar](32) NULL,
+	[MADE_SLA] [varchar](5) NULL,
+	[NUMBER] [varchar](40) NOT NULL,
+	[OPENED] [datetime] NULL,
+	[OPENED_BY] [varchar](32) NULL,
+	[ORDER] [int] NULL,
+	[PARENT] [varchar](32) NULL,
+	[PRIORITY] [varchar](50) NULL,
+	[REASSIGNMENT_COUNT] [int] NULL,
+	[REJECTION_GOGO] [varchar](32) NULL,
+	[SERVICE_OFFERING] [varchar](32) NULL,
+	[SHORT_DESCRIPTION] [varchar](80) NULL,
+	[SKILLS] [varchar](4000) NULL,
+	[SLA_DUE] [datetime] NULL,
+	[STATE] [varchar](50) NULL,
+	[TASK_TYPE] [varchar](80) NULL,
+	[CREATED_BY] [varchar](40) NULL,
+	[CREATED] [datetime] NULL,
+	[DOMAIN] [varchar](32) NULL,
+	[UPDATES] [int] NULL,
+	[UPDATED_BY] [varchar](40) NULL,
+	[UPDATED] [datetime] NULL,
+	[TIME_WORKED] [int] NULL,
+	[UPON_APPROVAL] [varchar](40) NULL,
+	[UPON_REJECT] [varchar](40) NULL,
+	[URGENCY] [varchar](50) NULL,
+	[USER_INPUT] [varchar](4000) NULL,
+	[BUSINESS_SERVICE] [varchar](32) NULL,
+	[PROVIDER_SERVICE] [varchar](32) NULL,
+	[KB_ARTICLE] [varchar](32) NULL,
+	[COMPONENT_CATEGORY_L1] [varchar](40) NULL,
+	[COMPONENT_CATEGORY_L2] [varchar](40) NULL,
+	[COMPONENT_CATEGORY_L3] [varchar](40) NULL,
+	[PROTOCOL_NOT_FOLLOWED] [varchar](5) NULL,
+	[VARIABLES] [varchar](40) NULL,
+	[WATCH_LIST] [varchar](4000) NULL,
+	[WORKFLOW_ACTIVITY] [varchar](32) NULL,
+	[ACTUAL_WORK_END] [datetime] NULL,
+	[WORK_NOTES] [varchar](4000) NULL,
+	[WORK_NOTES_LIST] [varchar](4000) NULL,
+	[ACTUAL_WORK_START] [datetime] NULL,
+	[ODS_CREATE_DATE] [datetime] NULL,
+	[ODS_CREATED_BY] [varchar](50) NULL,
+	[ODS_UPDATE_DATE] [datetime] NULL,
+	[ODS_UPDATED_BY] [varchar](50) NULL,
+ CONSTRAINT [PK_LAND_INCIDENT] PRIMARY KEY CLUSTERED 
+(
+	[NUMBER] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+ALTER TABLE [sn].[LAND_INCIDENT] ADD  DEFAULT (getutcdate()) FOR [ODS_CREATE_DATE]
+GO
+
+ALTER TABLE [sn].[LAND_INCIDENT] ADD  DEFAULT (getutcdate()) FOR [ODS_UPDATE_DATE]
+GO
+
+CREATE INDEX idx01_LAND_INCIDENT ON sn.LAND_INCIDENT(ODS_UPDATE_DATE)
+GO
+
+PRINT 'Creating table LAND_INCIDENT. Finished at: ' + CONVERT(VARCHAR(20), GETUTCDATE(), 120)
+GO

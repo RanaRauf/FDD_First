@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DISE"
+  DTS:DTSID="{3B085222-852E-4BE2-A125-0CD9C59C314B}"
+  DTS:CreationName="ADO.NET:System.Data.OleDb.OleDbConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=ACDB2L01.aircell.prod;User ID=FDDIAPP;Initial Catalog=ACDB2L01;Provider=IBMDA400.DataSource.1;Persist Security Info=True;Connect Timeout=300;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAxaY+MSeWDUWn+LvGdsX/swAAAAACAAAAAAADZgAAwAAAABAAAABdHA8CQvdZF1zFAd0nJDZbAAAAAASAAACgAAAAEAAAAJMCAZMGnZSJkxlm5HnAMSt4AAAAz1cjrCAtUGMEimNvTWdRZAxeUVWg7XoDp/GyNtckQSMLk872vyk5HqVQeOPJNcG903H9jeJQTJAoU1HXiIaFpK26Wvw/doIEe9tm4G32ljUzT/doUYWGqNwQ7S3K7kNnmxjtV8t6Jv2ma5MkvjeBc8yuwT3ENy+IFAAAAGptdaBP2MxeKrPfF+wLocP8gHbF</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

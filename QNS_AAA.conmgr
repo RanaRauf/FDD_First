@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="QNS_AAA"
+  DTS:DTSID="{BFF0E824-477C-4B71-B65B-5442B8BD4CD3}"
+  DTS:CreationName="ADO.NET:MySql.Data.MySqlClient.MySqlConnection, MySql.Data, Version=6.6.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="server=10.240.33.113;User Id=gdwuser;database=qns_report;">
+      <DTS:Password
+        DTS:Name="password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAudQtsTPixUWGgndL8W9PCgAAAAACAAAAAAADZgAAwAAAABAAAABfSr9vptqyC5Ecnl4xxO2tAAAAAASAAACgAAAAEAAAAObeT6V9/ESUC3lPWo1W6cB4AAAAlMNUcUXSfAB9MjrJm+K2zEMCsL/frasbQczrAwLIGIdIzxgAjy5MjaJ0cHRd/Gz62EEMpMKi1UD29fLESLGWnjyyKOCfPxpa4o4JRQVf5WtQud0KoelPr1SmqavUKsPeLpZqvIPnJwd5gcR7qjKDB8zhcSFsTk1hFAAAAKOLoEPxWBolTrZWF8MyQCHWp3mx</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

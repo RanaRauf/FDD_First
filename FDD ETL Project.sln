@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "FDD ETL Project", "FDD ETL Project.dtproj", "{2AC15B6B-6643-47A4-81BB-B2CC7DA1A49B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2AC15B6B-6643-47A4-81BB-B2CC7DA1A49B}.Development|Default.ActiveCfg = Development
+		{2AC15B6B-6643-47A4-81BB-B2CC7DA1A49B}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

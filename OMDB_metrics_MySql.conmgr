@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="OMDB_metrics_MySql"
+  DTS:DTSID="{9441128A-21E6-4F91-8702-A941CE7E8A21}"
+  DTS:CreationName="ADO.NET:MySql.Data.MySqlClient.MySqlConnection, MySql.Data, Version=6.6.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="server=TIL-BL-ODB-01.aircell.prod;User Id=readonly;Persist Security Info=True;database=metrics;Default Command Timeout=300;">
+      <DTS:Password
+        DTS:Name="password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAAJZ21YjXV0GozFAcl6xsKwAAAAACAAAAAAADZgAAwAAAABAAAADmPqIT5aSyGwcwc9yGbHz5AAAAAASAAACgAAAAEAAAADWraTA2OGww18+djIaoAxp4AAAA0nyvLu0hm7y5gbtu5CgWxKv7zOI3rtpAjc4BBoePU246ebZ6eh85j846Q3WDyg3r19QTAuFOmbc47+P4QsPwawhMyx55lQY4Wn7hmDW/WTX38Tc2AGbKT1F8YniXlbxyDo25kiM+06UXMbT9FK+8lIK6/FsgsuFjFAAAADwzaFoO/TChJfn2yqGZSrJHl3tA</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

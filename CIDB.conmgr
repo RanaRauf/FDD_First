@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="CIDB"
+  DTS:DTSID="{44AF9980-EFB5-4FBE-8B18-25487A11A19B}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=CIDB_ORACLE_PROD;User ID=PSG_RO;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAxaY+MSeWDUWn+LvGdsX/swAAAAACAAAAAAADZgAAwAAAABAAAABHh55m1PXSZ6OdI9Wx06RgAAAAAASAAACgAAAAEAAAAMI8e5QZEgqworQHyzt0aQZ4AAAAoRoWKo9HqIx321dBKw/zK9WgbsIgDLp2koQgTD5vadJj24qm9BjVIh1ngzqGkx59dkqE0oNT8A52qXPKZDL7NP3fq7sifnCdQvqMWVLYVKRrl+KAWM33guyPDWFLDJxKogIUtrFkYIs3Yn5EMQt1lZahjoDWt0E4FAAAAGdH8E3gWYHJa2lwAMRUv7NgExHF</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

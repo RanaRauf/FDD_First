@@ -1,0 +1,10 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="ARINC_ORACLE_OLE"
+  DTS:DTSID="{03C5CC60-B93B-4800-BB7F-C0BC2EF58AC8}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=ARINC_ORACLE;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="AAA"
+  DTS:DTSID="{49724AF2-0A2B-4F38-B67F-87BA65BE3D17}"
+  DTS:CreationName="ADO.NET:MySql.Data.MySqlClient.MySqlConnection, MySql.Data, Version=6.6.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="server=10.240.33.30;User Id=TSSserver1;Persist Security Info=True;database=broadhop;Default Command Timeout=300;">
+      <DTS:Password
+        DTS:Name="password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAxaY+MSeWDUWn+LvGdsX/swAAAAACAAAAAAADZgAAwAAAABAAAADgpIcoI1X1m6UFra5UeR/yAAAAAASAAACgAAAAEAAAAJgdNCE+T5IeaN9pWc40Ead4AAAA+SAvLnKYR1+iYe1NJ1nhBExVYFLTcNbtvQw1nuZpeLDqcgJy01KKa+fdCwiyIbeiPTxog8URVW4XpREzQWTmveED7BJYbG/zAMmDJWRcJFcOXMma/XIlbqVx918Yr7P0nsThC90rxIOMKgggSOJVe7Nsp9FbbR5QFAAAAMyZTLKdck5R+fS+SxM+dQuX18pL</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

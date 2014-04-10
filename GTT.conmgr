@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="GTT"
+  DTS:DTSID="{9D36FF99-5384-4139-913A-C5F068CA451C}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=pilclust02-scan.aircell.prod/prdstrm1_service.aircell.prod;User ID=GTT_RO;Provider=MSDAORA.1;Persist Security Info=True;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmjPxGlQU4kyviAvj+laRFwAAAAACAAAAAAADZgAAwAAAABAAAADez+/6p/wCDXPC0boo9HHgAAAAAASAAACgAAAAEAAAABeB4YDw4lOP4n29KJhHUNN4AAAAsvXQqevI505h+IUOVXp5I/cG2mOoE5yM0fmkgZV7HPg4POrm419og7JI2uORNNjLvO99P6/bKVgOmNau7XDRd1ZPzGAA8OdIDsATzM8rmiIScyXqhMCVPb/6Zb+6mOzzc8puSKAMeXWhHu8Io5Xe4WueeKBA0GvVFAAAAAsooX/m4tPKiwhpBS9is9hhjGsf</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

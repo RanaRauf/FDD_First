@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="ARINC_ORACLE.S2FIG_APP"
+  DTS:DTSID="{6EB2E256-9A3B-44C4-9C8A-6352313E8F05}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=ARINC_ORACLE_PROD;User ID=figro;Provider=MSDAORA.1;Persist Security Info=True;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAARjKYoc4Y+0SAP65ZoZNwUQAAAAACAAAAAAADZgAAwAAAABAAAACWxLsj19AgOWtKXTV/j+CqAAAAAASAAACgAAAAEAAAAN0eciIj8LItgFTOJJQbL/V4AAAA/RkYqKAn6mHXjjB2mUnBZOCKOJc4lMf/depKqOh+/jN9wgimVTkqY4EnkW/60pickFib6ztGC8bDFgih+ygck5STlHuTn/5CT9cGG3KGiHC7jnm6FDa4inawq5KZUR6mtSF0yPYO8u5FW68XROMUrg5xx0IqP0PFFAAAAD+hL+7UQEYoNBAxyj2m9On1b+cx</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

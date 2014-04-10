@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="NETCOOL"
+  DTS:DTSID="{75A7389E-ED64-45D7-8AEA-F3D6DC384B1C}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=10.240.16.24 :50000;User ID=db2inst1;Initial Catalog=REPORTER;Provider=DB2OLEDB.1;Persist Security Info=True;Network Address=10.240.16.24;Network Port=50000;Package Collection=DB2INST1;Default Schema=DB2INST1;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAxaY+MSeWDUWn+LvGdsX/swAAAAACAAAAAAADZgAAwAAAABAAAADV4RdSls1QjcrCwn60LN46AAAAAASAAACgAAAAEAAAAE2EYjenH9dywXva2iFH6kV4AAAAbJFL/uXxLE9Mq4tyKrC25P4pt1adWAObppW+Pszl8ek7fauiA3bUck+LycY5WnkQMYWtT9I43XROd9I/C72e3Y9W2M5/x7+isfBxuwBsCHIBfaZEb9oFbA6QRPlN424DWDToY5jIdBr1c7+j4LYFz3krmDl5TCJRFAAAAFJb/tfstyPGupADDMXBalGWXshG</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

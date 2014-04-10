@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="AirlineSolutions"
+  DTS:DTSID="{E2B5BE82-0A56-475A-BCC2-9F1502D7A1D8}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=cil-vm-sql-12.gogo.local;User ID=AirlineSolutions_GDW;Initial Catalog=AirlineSolutions;Provider=SQLNCLI11.1;Persist Security Info=True;Connect Timeout=30;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAxaY+MSeWDUWn+LvGdsX/swAAAAACAAAAAAADZgAAwAAAABAAAADaJ3FeryjyDSVMzlzPrMm2AAAAAASAAACgAAAAEAAAAC9fdNNy9b0vqjN+iWBthl6AAAAABwuXKAbZ9Rp0/N0rvXMf/Mwncfere4l0dkJbGjkFMTf0NVMwh99DtUHPTSZ8dXY5DFekkob+hMu7BzF5XdjoT8bThrJgj8Xh8RLD3wC/Qdc2IDamOUwIRrtH7uzzh0JdzF/lKBUYVSpnU/mED3uy/XjKJlBpFzjSVkdYSiSyK+UUAAAAlFcYqJx5oCGHvButLgWqBWNeS0w=</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

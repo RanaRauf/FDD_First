@@ -1,0 +1,13 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DQS Cleansing Connection Manager.DIL-BL-FDD-11"
+  DTS:DTSID="{A1873BE1-B43A-4CBF-AE62-FD7B52477167}"
+  DTS:CreationName="DQS">
+  <DTS:ObjectData>
+    <InnerObject>
+      <ServerName
+        Type="8"
+        Value="DIL-BL-FDD-11" />
+    </InnerObject>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

@@ -1,0 +1,36 @@
+USE [ODS_LANDING]
+GO
+
+/****** Object:  Table [finance].[LAND_SCOOT]    Script Date: 11/19/2013 12:03:01 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [finance].[LAND_SCOOT](
+	[DATE] [varchar](10) NULL,
+	[MONTHLY_SERVICE_FEE] [varchar](10) NULL,
+	[CONNECTIVITY_FEE] [varchar](10) NULL,
+	[CONTECT_DELIVERY_FEE] [varchar](10) NULL,
+	[ODS_CREATE_DATE] [datetime] NOT NULL,
+	[ODS_CREATED_BY] [nvarchar](50) NOT NULL,
+	[ODS_UPDATE_DATE] [datetime] NOT NULL,
+	[ODS_UPDATED_BY] [nvarchar](50) NOT NULL
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+ALTER TABLE [finance].[LAND_SCOOT] ADD  DEFAULT (getutcdate()) FOR [ODS_CREATE_DATE]
+GO
+
+ALTER TABLE [finance].[LAND_SCOOT] ADD  DEFAULT (getutcdate()) FOR [ODS_UPDATE_DATE]
+GO
+
+

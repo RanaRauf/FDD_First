@@ -1,0 +1,10 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="MBB"
+  DTS:DTSID="{937315DE-D865-4CAC-93AB-5D9EA8B2E654}"
+  DTS:CreationName="ADO.NET:MySql.Data.MySqlClient.MySqlConnection, MySql.Data, Version=6.6.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="server=10.240.19.20;User Id=mbb_etl_user;database=DBA_PHASE14;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
